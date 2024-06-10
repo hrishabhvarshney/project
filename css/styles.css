@@ -1,0 +1,117 @@
+body,
+h1,
+h3,
+p,
+input {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  padding: 1em;
+  background-color: #4caf50;
+  color: white;
+}
+
+#searchBar {
+  width: 80%;
+  max-width: 500px;
+  padding: 1em;
+  margin: 1em auto;
+  display: block;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#diseaseContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1em;
+  gap: 1em;
+}
+
+.disease-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 0.5em;
+  padding: 1em;
+  width: 100%;
+  max-width: 200px;
+  text-align: center;
+  transition: transform 0.3s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.disease-card:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+#diseaseDetails {
+  padding: 2em;
+  background-color: white;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 2em auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+  margin-bottom: 1em;
+}
+
+a {
+  color: #4caf50;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 600px) {
+  #searchBar {
+    width: 60%;
+  }
+
+  .disease-card {
+    width: calc(50% - 2em);
+  }
+}
+
+/ @media (min-width: 900px) {
+  #searchBar {
+    width: 50%;
+  }
+
+  .disease-card {
+    width: calc(33.333% - 2em);
+  }
+}
+
+@media (min-width: 1200px) {
+  #searchBar {
+    width: 40%;
+  }
+
+  .disease-card {
+    width: calc(25% - 2em);
+  }
+}
