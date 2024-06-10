@@ -10,7 +10,7 @@ input {
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f9;
+  background-color: #ebf4fa;
   color: #333;
   margin: 0;
   padding: 0;
@@ -19,7 +19,7 @@ body {
 header {
   text-align: center;
   padding: 1em;
-  background-color: #4caf50;
+  background-color: #9bcb64;
   color: white;
 }
 
@@ -40,7 +40,13 @@ header {
   padding: 1em;
   gap: 1em;
 }
-
+.disease-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
 .disease-card {
   background-color: white;
   border: 1px solid #ddd;
@@ -96,7 +102,7 @@ a:hover {
   }
 }
 
-/ @media (min-width: 900px) {
+@media (min-width: 900px) {
   #searchBar {
     width: 50%;
   }
@@ -113,5 +119,77 @@ a:hover {
 
   .disease-card {
     width: calc(25% - 2em);
+  }
+}
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ebf4fa;
+  color: #333;
+}
+
+header {
+  width: 100%;
+  background-color: #4caf50;
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #2e7d32;
+  border-radius: 5px;
+}
+
+header a:hover {
+  background-color: #1b5e20;
+}
+
+main {
+  width: 90%;
+  max-width: 800px;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+section h3 {
+  margin-bottom: 10px;
+  color: #4caf50;
+}
+
+section p {
+  margin: 0;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+  main {
+    padding: 15px;
   }
 }
