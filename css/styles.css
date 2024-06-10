@@ -18,7 +18,7 @@ body {
 
 header {
   text-align: center;
-  padding: 1em;
+  padding: 2em;
   background-color: #9bcb64;
   color: white;
 }
@@ -48,7 +48,7 @@ header {
   border-top-right-radius: 5px;
 }
 .disease-card {
-  background-color: white;
+  background-color: #ebf4fa;
   border: 1px solid #ddd;
   border-radius: 5px;
   margin: 0.5em;
@@ -71,7 +71,7 @@ header {
 
 #diseaseDetails {
   padding: 2em;
-  background-color: white;
+  background-color: #ebf4fa;
   border-radius: 10px;
   max-width: 600px;
   margin: 2em auto;
@@ -187,7 +187,7 @@ section p {
 /* Responsive design */
 @media (max-width: 600px) {
   body {
-    padding: 10px;
+    padding: 0px;
   }
   main {
     padding: 15px;
