@@ -195,38 +195,6 @@ section p {
     padding: 15px;
   }
 }
-/*google*/
-/* Hide the Google Translate banner frame */
-.goog-te-banner-frame.skiptranslate {
-  display: none !important;
-}
-
-/* Hide the top toolbar */
-body {
-  top: 0px !important;
-}
-
-/* Remove the Google Translate icon */
-.goog-te-gadget-icon {
-  display: none !important;
-}
-
-/* Remove the google translate banner */
-.goog-te-banner-frame {
-  display: none !important;
-}
-
-/* Remove the google translate floating button */
-.goog-te-balloon-frame {
-  display: none !important;
-}
-
-/* Style the Google Translate drop-down */
-#google_translate_element {
-  display: inline-block;
-  margin-left: 10px;
-}
-
 .header-controls {
   display: flex;
   align-items: center;
@@ -246,34 +214,22 @@ body {
     align-items: center;
   }
 }
-/* Hide Google Translate banner and related elements */
-/* Hide the Google Translate banner frame */
-.goog-te-banner-frame.skiptranslate {
-  display: none !important;
+.header-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-/* Remove the Google Translate icon */
-body > .goog-te-gadget-icon {
-  display: none !important;
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* Remove the Google Translate banner */
-body > .goog-te-banner-frame {
-  display: none !important;
-}
-
-/* Remove the Google Translate floating button */
-body > .goog-te-balloon-frame {
-  display: none !important;
-}
-
-/* Ensure no white space is left by hidden elements */
-body > .translated-ltr,
-body > .translated-rtl {
-  margin-top: 0 !important;
-}
-
-/* Ensure the translation button is still visible */
-#google_translate_element {
-  display: block !important;
+@media (min-width: 600px) {
+  .header-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
