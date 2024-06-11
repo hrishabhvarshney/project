@@ -193,3 +193,33 @@ section p {
     padding: 15px;
   }
 }
+/*google*/
+/* Google Translate Styles */
+#google_translate_element {
+  display: inline-block;
+  margin-left: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.goog-te-gadget-simple {
+  background-color: #2e7d32 !important;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: white !important;
+  font-size: 0.9em;
+  cursor: pointer;
+}
+
+.goog-te-gadget-simple .goog-te-menu-value {
+  color: white !important;
+  text-decoration: none;
+}
+
+.goog-te-gadget-simple .goog-te-menu-value:hover {
+  text-decoration: underline;
+}
+
+.goog-te-gadget-icon {
+  display: none;
+}
