@@ -133,7 +133,9 @@ body {
   background-color: #ebf4fa;
   color: #333;
 }
-
+.header-container {
+  margin-top: 25px;
+}
 header {
   width: 100%;
   background-color: #4caf50;
@@ -194,32 +196,84 @@ section p {
   }
 }
 /*google*/
-/* Google Translate Styles */
+/* Hide the Google Translate banner frame */
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+
+/* Hide the top toolbar */
+body {
+  top: 0px !important;
+}
+
+/* Remove the Google Translate icon */
+.goog-te-gadget-icon {
+  display: none !important;
+}
+
+/* Remove the google translate banner */
+.goog-te-banner-frame {
+  display: none !important;
+}
+
+/* Remove the google translate floating button */
+.goog-te-balloon-frame {
+  display: none !important;
+}
+
+/* Style the Google Translate drop-down */
 #google_translate_element {
   display: inline-block;
   margin-left: 10px;
-  border-radius: 5px;
-  overflow: hidden;
 }
 
-.goog-te-gadget-simple {
-  background-color: #2e7d32 !important;
-  border-radius: 5px;
-  padding: 5px 10px;
-  color: white !important;
-  font-size: 0.9em;
-  cursor: pointer;
+.header-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-.goog-te-gadget-simple .goog-te-menu-value {
-  color: white !important;
-  text-decoration: none;
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.goog-te-gadget-simple .goog-te-menu-value:hover {
-  text-decoration: underline;
+@media (min-width: 600px) {
+  .header-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+/* Hide Google Translate banner and related elements */
+/* Hide the Google Translate banner frame */
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
 }
 
-.goog-te-gadget-icon {
-  display: none;
+/* Remove the Google Translate icon */
+body > .goog-te-gadget-icon {
+  display: none !important;
+}
+
+/* Remove the Google Translate banner */
+body > .goog-te-banner-frame {
+  display: none !important;
+}
+
+/* Remove the Google Translate floating button */
+body > .goog-te-balloon-frame {
+  display: none !important;
+}
+
+/* Ensure no white space is left by hidden elements */
+body > .translated-ltr,
+body > .translated-rtl {
+  margin-top: 0 !important;
+}
+
+/* Ensure the translation button is still visible */
+#google_translate_element {
+  display: block !important;
 }
