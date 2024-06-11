@@ -6,36 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Disease Details</title>
     <link rel="stylesheet" href="css/styles.css">
+    <!-- Google Translate API Script -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {
+                    pageLanguage: 'en',
+                    includedLanguages: 'hi,bn,te,mr,ta,ur,gu,kn,ml,pa,en',
+                    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+                },
+                'google_translate_element'
+            );
+        }
+    </script>
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </head>
 
 <body>
     <header>
-        <h1 id="diseaseName" style="margin-top: 25px;"></h1>
+        <h1 id="diseaseName"></h1>
         <a href="index.html">Back to Search</a>
+        <!-- Google Translate Dropdown -->
+        <div id="google_translate_wrapper">
+            <div id="google_translate_element"></div>
+        </div>
     </header>
     <main>
         <section>
-            <h2>Description</h2>
+            <h3>Description</h3>
             <p id="diseaseDescription"></p>
         </section>
         <section>
-            <h2>Symptoms</h2>
+            <h3>Symptoms</h3>
             <p id="diseaseSymptoms"></p>
         </section>
         <section>
-            <h2>Causes</h2>
+            <h3>Causes</h3>
             <p id="diseaseCauses"></p>
         </section>
         <section>
-            <h2>Management</h2>
+            <h3>Management</h3>
             <p id="diseaseManagement"></p>
         </section>
         <section>
-            <h2>Medicines</h2>
+            <h3>Medicines</h3>
             <p id="diseaseMedicines"></p>
         </section>
         <section>
-            <h2>Precautions</h2>
+            <h3>Precautions</h3>
             <p id="diseasePrecautions"></p>
         </section>
     </main>
